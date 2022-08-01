@@ -2,13 +2,17 @@
   <div class="my-header">
     <div class="center">
       <div>
-        <img src="" alt="" />
+        <img src="/img/logo.png" alt="" />
         <router-link to="/">We-Traveller</router-link>
       </div>
       <ul>
         <li>收藏</li>
-        <li>登录</li>
-        <li>注册</li>
+        <li>
+          <router-link to="/login">登录</router-link>
+        </li>
+        <li>
+          <router-link to="/register">注册</router-link>
+        </li>
       </ul>
     </div>
   </div>
@@ -28,7 +32,7 @@ export default {};
     display: flex;
     justify-content: space-between;
     div {
-      img{
+      img {
         vertical-align: center;
         width: 40px;
         height: 40px;
@@ -42,9 +46,13 @@ export default {};
       display: flex;
       width: 200px;
       list-style: none;
-      li{
+      li {
         color: rgb(15, 43, 15);
         margin-left: 15px;
+        a {
+          text-decoration: none;
+          color: #444;
+        }
       }
     }
   }

@@ -2,7 +2,7 @@
   <div class="my-footer">
     <div class="center">
       <div class="footer-logan">
-        <img src="" alt="" />
+        <img src="/img/logo.png" alt="" />
       </div>
 
       <div class="about-us">
@@ -51,6 +51,9 @@ export default {};
       border: 1px solid #000;
       width: 100px;
       height: 100px;
+      img{
+        width: 100%;
+      }
     }
     .about-us{
       display: flex;
