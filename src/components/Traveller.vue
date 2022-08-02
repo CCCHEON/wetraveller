@@ -1,7 +1,6 @@
 <template>
   <div class="traveller">
-    <p>旅游达人推荐</p>
-    <el-carousel :interval="5000" type="card" height="200px">
+    <el-carousel :interval="5000" type="card" height="200px"  indicator-position="none">
       <el-carousel-item v-for="item in 6" :key="item">
         <img src="/img/logo.png" alt="" />
         <div>
@@ -27,12 +26,11 @@ export default {};
   font-size: 14px;
   opacity: 0.75;
   line-height: 200px;
-  margin: 0;
 }
 .el-carousel__item {
   border-radius: 20px;
-  padding: 5px;
   display: flex;
+  padding: 5px;
   img {
     width: 40%;
     border-radius: 20px;

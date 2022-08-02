@@ -45,7 +45,7 @@
       </div>
       <!-- 最近搜索 -->
       <div class="recent-search">
-        <h4>最近搜索</h4>
+        <h2>最近搜索</h2>
         <el-row :gutter="12">
           <el-col :span="6">
             <el-card shadow="hover"> 最近搜索 </el-card>
@@ -62,14 +62,23 @@
         </el-row>
       </div>
       <!-- 景点体验杂谈 -->
+      <div class="title">
+        <h2>景点体验杂谈</h2>
+      </div>
       <div class="travel-tattle">
         <pre-tattle />
       </div>
       <!-- 旅游论坛概览 -->
+      <div class="title">
+        <h2>旅游论坛</h2>
+      </div>
       <div class="travel-forum">
         <pre-forum />
       </div>
       <!-- 达人推荐 -->
+      <div class="title">
+        <h2>达人推荐</h2>
+      </div>
       <div class="traveller">
         <traveller />
       </div>
@@ -131,23 +140,32 @@ export default {
         line-height: 50px;
       }
     }
+    .recent-search{
+      margin-top: 5px;
+      width: 100%;
+      height: 100px;
+      padding: 5px;
+    }
     .travel-tattle {
       margin-top: 5px;
       width: 100%;
       height: 400px;
-      background-color: rgb(175, 163, 163);
+      // background-color: rgb(175, 163, 163);
     }
     .travel-forum {
       margin-top: 5px;
       width: 100%;
       height: 400px;
-      background-color: rgb(104, 88, 88);
+      // background-color: rgb(104, 88, 88);
     }
     .traveller {
-      margin-top: 5px;
+      margin: 5px 0;
       width: 100%;
       height: 300px;
-      background-color: rgb(175, 163, 163);
+      // background-color: #023e28;
+    }
+    .title {
+      padding: 0 5px;
     }
   }
 }
