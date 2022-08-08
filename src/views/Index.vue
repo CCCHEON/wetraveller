@@ -3,18 +3,26 @@
     <div class="center">
       <!-- 导航栏部分 -->
       <el-row :gutter="20">
-        <el-col :span="6"
-          ><div class="grid-content bg-purple">首页</div></el-col
-        >
-        <el-col :span="6"
-          ><div class="grid-content bg-purple">景点体验杂谈</div></el-col
-        >
-        <el-col :span="6"
-          ><div class="grid-content bg-purple">旅游论坛</div></el-col
-        >
-        <el-col :span="6"
-          ><div class="grid-content bg-purple">达人推荐</div></el-col
-        >
+        <el-col :span="6">
+          <div class="grid-content bg-purple">
+            <a href="#">首页</a>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content bg-purple">
+            <a href="#travel-tattle">景点体验杂谈</a>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content bg-purple">
+            <a href="#travel-forum">旅游论坛</a>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content bg-purple">
+            <a href="#traveller">达人推荐</a>
+          </div>
+        </el-col>
       </el-row>
       <!-- banner大图部分 -->
       <div class="banner">
@@ -27,7 +35,7 @@
             repudiandae molestiae nobis cumque. Harum.
           </p>
         </div>
-        <button>点击查看 >></button>
+        <button @click="goSpotDetails">点击查看 >></button>
       </div>
       <!-- 搜索框部分 -->
       <div class="search">
@@ -62,21 +70,21 @@
         </el-row>
       </div>
       <!-- 景点体验杂谈 -->
-      <div class="title">
+      <div class="title" id="travel-tattle">
         <h2>景点体验杂谈</h2>
       </div>
       <div class="travel-tattle">
         <pre-tattle />
       </div>
       <!-- 旅游论坛概览 -->
-      <div class="title">
+      <div class="title" id="travel-forum">
         <h2>旅游论坛</h2>
       </div>
       <div class="travel-forum">
         <pre-forum />
       </div>
       <!-- 达人推荐 -->
-      <div class="title">
+      <div class="title" id="traveller">
         <h2>达人推荐</h2>
       </div>
       <div class="traveller">
@@ -97,6 +105,12 @@ export default {
       searchVal: "",
     };
   },
+  methods:{
+  goSpotDetails(){
+    this.$router.push("/spotDetails")
+  }    
+  }
+
 };
 </script>
 
@@ -121,6 +135,10 @@ export default {
           color: #fff;
           text-align: center;
           line-height: 40px;
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
         }
       }
     }

@@ -20,6 +20,11 @@ const routes = [
     name: 'register',
     component: () => import('../views/Register.vue'),
   },
+  {
+    path: '/spotDetails',
+    name: 'spotDetails',
+    component: () => import('../views/SpotDetails.vue'),
+  },
 ]
 
 const router = new VueRouter({

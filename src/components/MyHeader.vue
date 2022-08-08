@@ -6,12 +6,18 @@
         <router-link to="/">We-Traveller</router-link>
       </div>
       <ul>
-        <li>收藏</li>
         <li>
-          <router-link to="/login">登录</router-link>
+          <el-button plain icon="el-icon-star-off" circle size="small"/>
+          </li>
+        <li>
+          <el-button plain round size="small">
+            <router-link to="/login">登录</router-link>
+          </el-button>         
         </li>
         <li>
-          <router-link to="/register">注册</router-link>
+          <el-button plain round size="small">
+            <router-link to="/register">注册</router-link>
+          </el-button>
         </li>
       </ul>
     </div>
